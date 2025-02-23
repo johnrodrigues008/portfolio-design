@@ -7,6 +7,10 @@ import IconSamsung from "../public/icon/samsung.svg";
 import IconApple from "../public/icon/apple.svg";
 import IconAddidas from "../public/icon/addidas.svg";
 
+import ImgProductDesign from "../public/image/product-design.svg";
+import ImgVisualDesign from "../public/image/visual-design.svg";
+import ImgArtDirection from "../public/image/art-direction.svg";
+
 export default function into() {
   return (
     <>
@@ -29,7 +33,6 @@ export default function into() {
             Visual Designer
           </h1>
 
-          {/* Imagem somente no mobile */}
           <div className="mt-4 flex justify-center items-center md:hidden">
             <Image
               className="w-[300px]"
@@ -49,7 +52,6 @@ export default function into() {
           </button>
         </div>
 
-        {/* Imagem somente no desktop */}
         <div className="hidden md:flex justify-center items-center">
           <Image
             className="w-[480px]"
@@ -62,7 +64,6 @@ export default function into() {
       </div>
 
       <div className="p-3 mt-[50px] md:p-6 md:px-16 md:mt-[100px]">
-        {/* Mobile: Grid com 3 imagens na primeira linha e 2 centralizadas na segunda */}
         <div className="grid grid-cols-3 gap-4 md:hidden">
           <div className="flex justify-center">
             <Image src={IconGoogle} alt="Icon addidas" />
@@ -73,7 +74,6 @@ export default function into() {
           <div className="flex justify-center">
             <Image className="px-3" src={IconSamsung} alt="Icon samsung" />
           </div>
-          {/* Linha inferior: ocupa todas as colunas e centraliza as 2 imagens */}
           <div className="col-span-3 flex justify-center gap-8 mt-4">
             <div>
               <Image src={IconApple} alt="Icon apple" />
@@ -84,7 +84,6 @@ export default function into() {
           </div>
         </div>
 
-        {/* Desktop: Layout original */}
         <div className="hidden md:flex justify-between w-full flex-wrap">
           <div>
             <Image src={IconGoogle} alt="Icon addidas" />
@@ -101,6 +100,24 @@ export default function into() {
           <div>
             <Image src={IconAddidas} alt="Icon addidas" />
           </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col items-center mt-8 md:mt-16 md:flex-row md:justify-between md:p-6 md:px-16">
+        <div className="flex flex-col items-center my-6 md:my-0">
+          <Image src={ImgProductDesign} alt="Icon product design" />
+          <h3 className="m-9 text-3xl font-semibold">Product Design</h3>
+          <p className="text-[17px] w-[340px] text-center">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+        </div>
+        <div className="flex flex-col items-center  my-6 md:my-0">
+          <Image src={ImgVisualDesign} alt="Icon visual design" />
+          <h3 className="m-9 text-3xl font-semibold">Product Design</h3>
+          <p className="text-[17px] w-[340px] text-center">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+        </div>
+        <div className="flex flex-col items-center  my-6 md:my-0">
+          <Image src={ImgArtDirection} alt="Icon art direction" />
+          <h3 className="m-9 text-3xl font-semibold">Product Design</h3>
+          <p className="text-[17px] w-[340px] text-center">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
         </div>
       </div>
     </>
