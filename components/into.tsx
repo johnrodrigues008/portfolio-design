@@ -16,7 +16,7 @@ export default function into() {
     <>
       <header>
         <ul className="flex justify-between w-full items-center p-4 py-6 md:p-6 md:px-8">
-          <li className="font-semibold text-[20px]">Logo</li>
+          <li className="font-semibold text-[20px]">KARIN</li>
           <div className="flex  text-[17px]">
             <li className="ml-4">About</li>
             <li className="ml-4">Work</li>
